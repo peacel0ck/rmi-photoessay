@@ -1,24 +1,31 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Adding a Google Font for the artsy serif look -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <title>Your Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-left">
-            <ul>
-                <li><a href="#info">Info</a></li>
-                <li><a href="#sources">Sources</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            PROJECT
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#info">Info</a>
+            <a href="#source">Sources</a>
         </div>
-    </header>
+        <div class="nav-brand">
+            <span class="bold">Race, Medicine, & Incarceration</span> — Prison labor in the South
+        </div>
+    </nav>
+
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony.Center.elliptisches.Dach.von.innen.jpg/2560px-Sony.Center.elliptisches.Dach.von.innen.jpg" 
+             id="zoomable-image" 
+             alt="Zoomable Image">
+    </div>
+
+    <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
